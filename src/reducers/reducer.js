@@ -15,14 +15,6 @@ const initialState = {
       { id: 4, name: 'Rear spoiler', price: 250 }
     ]
 };
-/*
-return{
-        ...state, 
-        additionalPrice: state.additionalPrice +=state.additionalFeatures[action.payload-1].price,
-        features: [...state.car.features, state.additionalFeatures[action.payload-1]]
-      }
-*/
-
 function reducer(state = initialState, action) {
   switch(action.type) {
     case ADD_FEATURE: 
