@@ -15,11 +15,6 @@ const AdditionalFeature = props => {
     </li>
   );
 };
-const mapStateToProps = state => {
-  return{
-
-  };
-};
 export default connect(
   null,
   {addFeature}

@@ -32,8 +32,7 @@ function reducer(state = initialState, action) {
       return{
         ...state, 
         additionalPrice: state.additionalPrice +=state.additionalFeatures[action.payload-1].price,
-        features: [...state.car.features, state.additionalFeatures[action.payload-1]]
-        
+        car: {...state.car, features: [...state.car.features, state.additionalFeatures[action.payload-1]]}
       }
     default:
       return state;
